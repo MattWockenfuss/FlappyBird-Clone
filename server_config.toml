@@ -1,0 +1,35 @@
+# this is the settings file for the flappy bird game hosted on this server
+
+#how fast the game moves, recommend 1 or 2
+targetPipeSpeed = 4
+
+#the horizontal distance between sets of pipes (not the gap u fit through)
+distanceBetweenPipes = 500
+
+#the vertical gap between pipes
+gap = 250
+
+
+# Remember that down is positive as 0,0 is the top left corner of the canvas
+
+#a variable, called vertSpeed is incremented to the birds y position
+#   every tick, vertspeed is incremented by effectFromGravity until maximumGravity
+#
+#   in essence, vertSpeed trends towards maximumGravity, and effectFromGravity is the speed
+#   when you jump, vertSpeed decreases by -13, and every tick, adds 1 effect from gravity until it reaches 2
+#
+#   change the following settings accordingly, its very possible to make the game impossible
+#
+
+
+
+effectFromGravity = 1
+maximumGravity = 3
+effectFromJump = -16
+minimumTicksBetweenJumps = 12
+
+#the minimum number of points to earn each of the following medals
+bronzeThreshold = 10
+silverThreshold = 30
+goldThreshold = 50
+platinumThreshold = 100

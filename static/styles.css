@@ -1,0 +1,73 @@
+html, body, canvas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E1D694;
+    background-image: url("/static/images/mainbg.png");
+    height: 100vh;
+    background-repeat: repeat-x;
+}
+canvas:focus{
+    outline: none;
+}
+* {
+    /*
+    border: 1px solid black;
+     */
+
+
+}
+#surroundings{
+  margin: 80px;
+  margin-top: 0px;
+  background-color: #E1D694;
+  background-image: url("/static/images/mainbg.png");
+  height: 100vh;
+  background-repeat: repeat-x;
+}
+#left, #right, #leftscore, #rightscore{
+  padding: 30px;
+  padding-top: 60px;
+}
+#main{
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  display: block;
+}
+ol {
+    font: 20px 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace, bold;
+}
+#leaderboardNAMES li:nth-child(1){
+    list-style-image: url("/static/images/gold_medal_icon.png");
+    font: 32px 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace, bold;
+}
+#leaderboardNAMES li:nth-child(2){
+    list-style-image: url("/static/images/silver_medal_icon.png");
+    font: 26px 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace, bold;
+}
+#leaderboardNAMES li:nth-child(3){
+    list-style-image: url("/static/images/bronze_medal_icon.png");
+    font: 22px 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace, bold;
+    padding-left: 10px;
+}
+#scoreTextAlign{
+    float: right;
+}
+#mainscore {
+    padding: 50px;
+}
+#mainscore h2 {
+    text-align: center;
+    font-weight: bold;
+}
+canvas {
+    width: 470px;
+    height: 834px;
+    border: black solid 4px;
+    border-radius: 14px;
+    font: 40px 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace, bold;
+    text-align: center;
+}
